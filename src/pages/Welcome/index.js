@@ -32,6 +32,14 @@ export default function Welcome() {
                 >
                     <Text style={styles.buttonText}>Login</Text>
                 </TouchableOpacity>
+
+                <TouchableOpacity
+                style={styles.buttonCadastro}
+                onPress={ () => navigation.navigate('Cadastro')}
+                >
+                    <Text style={styles.buttonTextCadastro}>Realizar Cadastro</Text>
+                </TouchableOpacity>
+
             </View>
         </View>
     );
@@ -55,23 +63,42 @@ const styles = StyleSheet.create({
         alignItems: 'center'        
     },
 
-    button:{
-        position: 'absolute',
+    button:{ 
+
         backgroundColor: '#00FF00',
         borderRadius: 50,
         paddingVertical: 10,
         width: '80%',
         alignSelf: 'center',
         alignItems: 'center',
+        justifyContent: 'center',  
+    },
+    buttonCadastro:{
+
+        marginTop: 30,
+        backgroundColor: '#00FF00',
+        borderRadius: 50,
+        paddingVertical: 10,
+        width: '80%',
+        alignSelf:'center',
         justifyContent: 'center',
-        
+        justifyContent: 'center',
     },
     buttonText:{
         fontSize: 18,
         color: '#1E1E1E',
-        fontWeight: 'bold'
-        
+        fontWeight: 'bold',
+        justifyContent: 'center',
+        justifyContent: 'center'
+    },
 
-    }
+    buttonTextCadastro:{
+        fontSize: 18,
+        fontWeight: 'bold',
+        color: '1E1E1E',
+        alignSelf:'center',
+        justifyContent: 'center',
+        justifyContent: 'center',
+ }
 
 })
